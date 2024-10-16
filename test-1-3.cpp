@@ -1,6 +1,8 @@
 #include "Destination.h"
 #include <vector>
 
+// Testing Destination files
+
 int main() {
     Destination d1("Helsinki", "Finland");
     Destination d2("Kinshasa", "DRC");
