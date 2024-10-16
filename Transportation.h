@@ -25,10 +25,10 @@ public:
     void set_departure_location(string location) {this->departure_location = location;}
     string get_departure_location() {return departure_location;}
     void set_arrival_location(string location) {this->arrival_location = location;}
-    string get_arrival_location() {return arrival_location;}
-    void set_departure_location(string date) {this->departure_date = date;}
-    string get_departure_location() {return departure_date;}
-    
+    string get_arrival_date() {return arrival_location;}
+    void set_departure_date(string date) {this->departure_date = date;}
+    string get_departure_date() {return departure_date;}
+    void set_arrival_date(string date) {this->departure_date = date;}
 
 };
 

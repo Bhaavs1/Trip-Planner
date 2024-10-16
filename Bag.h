@@ -15,6 +15,7 @@ private:
     Item* items;
 public:
     Bag();
+    Bag(string name); 
     ~Bag();
 
     // getters and setters
@@ -23,6 +24,8 @@ public:
     string get_bag_name() {return bag_name;}
 
     // add item string
+
+    
 };
 
 
