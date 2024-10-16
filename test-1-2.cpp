@@ -1,6 +1,6 @@
 #include "Bag.h"
 
-// testing Bag.h and Bag.cpp
+// testing Bag class
 
 int main() {
     Bag b1("Red handbag");

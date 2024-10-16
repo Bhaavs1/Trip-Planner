@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 
+// Testing Item class
+
 using namespace std;
 
 int main() {
