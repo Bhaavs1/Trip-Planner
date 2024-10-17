@@ -18,18 +18,58 @@ private:
 
 public:
     Transportation();
+    Transportation(string dep_loc, string arr_loc);
     ~Transportation();
 
     // getters and setters
 
+    // departure and arrival location
     void set_departure_location(string location) {this->departure_location = location;}
     string get_departure_location() {return departure_location;}
     void set_arrival_location(string location) {this->arrival_location = location;}
-    string get_arrival_date() {return arrival_location;}
+    string get_arrival_location() {return arrival_location;}
+
+    // departure and arrival dates
     void set_departure_date(string date) {this->departure_date = date;}
     string get_departure_date() {return departure_date;}
-    void set_arrival_date(string date) {this->departure_date = date;}
+    void set_arrival_date(string date) {this->arrival_date = date;}
+    string get_arrival_date() {return arrival_date;}
 
+    // other
+    void set_duration(float duration) {this->duration = duration;}
+    float get_duration() {return duration;}
+    void set_isBooked(bool isBooked) {this->isBooked = isBooked;}
+    bool get_isBooked() {return isBooked;}
+
+    // virtual print function
+
+    virtual void print() {
+        // cout << "Details:" << endl;
+        // cout << "Departing from: " << departure_location << endl;
+        // cout << "Date of departure: " << departure_date << endl;
+        // cout << "Arriving at: " << arrival_location << endl;
+        // cout << "Date of arrival: " << arrival_date << endl;
+        // cout << "Total travel time: " << duration << " hours" << endl;
+        // if (isBooked)
+        // {
+        //     cout << "Transportation has been booked." << endl;
+        // } else {
+        //     cout << "Transportation has NOT been booked." << endl;
+        // }
+        
+        cout << "Details:" << endl;
+        cout << "Departing from: " << get_departure_location() << endl;
+        cout << "Date of departure: " << get_departure_date() << endl;
+        cout << "Arriving at: " << get_arrival_location() << endl;
+        cout << "Date of arrival: " << get_arrival_date() << endl;
+        cout << "Total travel time: " << get_duration() << " hours" << endl;
+        if (isBooked)
+        {
+            cout << "Transportation has been booked." << endl;
+        } else {
+            cout << "Transportation has NOT been booked." << endl;
+        }
+    }
 };
 
 
