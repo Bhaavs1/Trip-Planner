@@ -14,7 +14,6 @@ int main() {
     bags.push_back(b3);
     bags.pop_back();
     bags.push_back(b4);
-    
 
     for (int i = 0; i < bags.size(); i++)
     {
