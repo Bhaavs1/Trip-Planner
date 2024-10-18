@@ -6,7 +6,7 @@
 
 class Flight : public Transportation
 {
-private:
+protected:
     string flight_number;
     string airport;
     string seat_number;
