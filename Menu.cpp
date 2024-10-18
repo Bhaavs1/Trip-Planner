@@ -11,7 +11,7 @@ Menu::Menu(int size): max_size(size), current_size(0) {
 void Menu::display_trips() {
     cout << "Your Trips:" << endl;
 
-    for (int i = 0; i < get_current_size(); i++)
+    for (int i = 0; i < max_size; i++)
     {
         cout << i + 1 << ". " << myTrips[i].get_name() << endl;
     }

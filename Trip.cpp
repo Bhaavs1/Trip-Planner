@@ -21,7 +21,9 @@ float Trip::get_current_cost() {
     {
         total_cost += packing_list[i].get_price();
     }
-    return total_cost;
+
+    current_cost = total_cost;
+    return current_cost;
 }
 
 void Trip::display_packing_list() {
@@ -80,4 +82,18 @@ void Trip::read_packing_list(string file_name) {
         
     }
 
+}
+
+void Trip::print_details() {
+    cout << "Trip details: " << endl;
+    cout << "1. Trip name: " << name << endl;
+    cout << "2. Start date: " << start_date << endl;
+    cout << "3. End date: " << end_date << endl;
+    cout << "4. Duration: " << duration << endl;
+    cout << "5. Current expenditure: $" << current_cost << endl;
+    cout << "6. Budget: $" << budget << endl;
+    cout << "7. Packing List (view more)" << endl;
+    cout << "8. Bag List (view more)" << endl;
+    cout << "9. Transportation (view more)" << endl;
+    cout << "10. Destinations (view more)" << endl;
 }

@@ -70,8 +70,9 @@ public:
 
     void add_item_to_list(Item item);
     void display_packing_list();
-    void export_packing_list(string name);
+    void export_packing_list(string name); // writes packing list to file
     void read_packing_list(string file_name);
+    void print_details();
 
 };
 
