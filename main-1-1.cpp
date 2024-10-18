@@ -1,7 +1,7 @@
 #include "Transportation.h"
 #include "Bag.h"
 #include "Item.h"
-// #include "Trip.h"
+#include "Trip.h"
 
 
 using namespace std;

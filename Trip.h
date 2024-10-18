@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "Item.h"
 #include "Transportation.h"
@@ -20,14 +21,21 @@ private:
     int duration;
     float current_cost;
     float budget;
-    Item* packing_list;
-    Transportation* transport_plan;
-    Destination* destinations;
+    vector<Item> packing_list;
+    vector<Transportation> transport_plan;
+    vector<Destination> destinations;
+
+    static int count; // used to set trip ID
 public:
     Trip();
     Trip(string name);
 
     // getters and setters
+
+    // ID
+
+    void set_ID(int ID) {this->ID = ID;}
+    int get_ID() {return ID;}
 
     // name
     void set_name(string name) {this->name = name;}
@@ -44,12 +52,16 @@ public:
     int get_duration() {return duration;}
 
     // current cost
-    void set_current_cost(int cost) {this->current_cost = cost;}
-    int get_current_cost() {return current_cost;}
+    void set_current_cost(float cost) {this->current_cost = cost;}
+    float get_current_cost();
 
     // budget
     void set_budget(int budget) {this->budget = budget;}
     int get_budget() {return budget;}
+
+    // count
+    void set_count(int count) {this->count = count;}
+    int get_count() {return count;}
 
 };
 
