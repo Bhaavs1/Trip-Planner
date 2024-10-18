@@ -4,10 +4,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 #include "Item.h"
 #include "Transportation.h"
 #include "Destination.h"
+#include "Bag.h"
 
 using namespace std;
 
@@ -22,6 +24,7 @@ private:
     float current_cost;
     float budget;
     vector<Item> packing_list;
+    vector<Bag> bag_list;
     vector<Transportation> transport_plan;
     vector<Destination> destinations;
 
@@ -62,6 +65,13 @@ public:
     // count
     void set_count(int count) {this->count = count;}
     int get_count() {return count;}
+
+    // other functions
+
+    void add_item_to_list(Item item);
+    void display_packing_list();
+    void export_packing_list(string name);
+    void read_packing_list(string file_name);
 
 };
 

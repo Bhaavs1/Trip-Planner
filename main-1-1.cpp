@@ -2,6 +2,10 @@
 #include "Bag.h"
 #include "Item.h"
 #include "Trip.h"
+#include "Menu.h"
+#include "Flight.h"
+#include "LayoverFlight.h"
+#include "Train.h"
 
 
 using namespace std;
@@ -28,11 +32,12 @@ int main() {
 
     if (continue_program == 'q')
     {
-        cout << "Program terminated by user" << endl;
+        cout << "See you next time and bon voyage!" << endl;
         return 0;
     }
     
-    cout << "You reached the end of the program" << endl;
+    // Set number of trips to max of 5
+    Menu mainMenu(5);
     
     
 }
