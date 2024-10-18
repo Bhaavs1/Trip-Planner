@@ -66,6 +66,7 @@ int main() {
     float current_exp = 0.0;
     float budget = 0.0;
     char add_item = '\0';
+    string filename;
 
     cout << to_string(selection);
 
@@ -145,7 +146,6 @@ int main() {
             cout << "Do you wish to export the packing list?" << endl;
             char exp;
             cin >> exp;
-            string filename;
             cout << "Please enter a file name: " << endl;
             cin >> filename;
             if (exp == 'y')
