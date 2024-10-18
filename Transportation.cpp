@@ -7,3 +7,19 @@ Transportation::Transportation(string dep_loc, string arr_loc): departure_locati
 Transportation::~Transportation()
 {
 }
+
+void Transportation::print() {
+        
+        cout << "Details:" << endl;
+        cout << "Departing from: " << get_departure_location() << endl;
+        cout << "Date of departure: " << get_departure_date() << endl;
+        cout << "Arriving at: " << get_arrival_location() << endl;
+        cout << "Date of arrival: " << get_arrival_date() << endl;
+        cout << "Total travel time: " << get_duration() << " hours" << endl;
+        if (isBooked)
+        {
+            cout << "Transportation has been booked." << endl;
+        } else {
+            cout << "Transportation has NOT been booked." << endl;
+        }
+}
